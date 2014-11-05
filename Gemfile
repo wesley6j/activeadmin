@@ -2,10 +2,7 @@ source 'https://rubygems.org'
 
 gemspec
 
-require File.expand_path 'spec/support/detect_rails_version', File.dirname(__FILE__)
-
-rails_version = detect_rails_version
-gem 'rails', rails_version
+gem 'rails'
 
 gem 'execjs', '~> 2.4.0' # ~> 2.5.0 works only for Ruby > 2.0
 
@@ -21,6 +18,7 @@ gem 'parallel_tests'
 
 # Debugging
 gem 'pry'                                   # Easily debug from your console with `binding.pry`
+gem 'appraisal'
 
 group :development do
   # Debugging
