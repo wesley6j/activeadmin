@@ -1,5 +1,4 @@
 def detect_rails_version
-  puts ENV.keys.sort.map{|key| "#{key}: #{ENV[key]}" }
   version = ENV['BUNDLE_GEMFILE'].match(/rails_(.*).gemfile/)[1]
 ensure
   puts "Detected Rails: #{version}" if ENV['DEBUG']
