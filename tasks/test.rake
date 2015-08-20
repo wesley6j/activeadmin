@@ -1,6 +1,6 @@
 desc "Creates a test rails app for the specs to run against"
 task :setup, :parallel do |t, args|
-  require '../../spec/support/detect_rails_version'
+  require './spec/support/detect_rails_version'
   if File.exists? dir = "spec/rails/rails-#{detect_rails_version}"
     puts "test app #{dir} already exists; skipping"
   else
